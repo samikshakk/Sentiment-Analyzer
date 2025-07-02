@@ -1,84 +1,112 @@
-<h2 align="center" style="color:#4CAF50">🔍 Analyze Legal Documents</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Legal Sentiment Analyzer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f7fa;
+      color: #1a1a1a;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #3b82f6;
+    }
+    code, pre {
+      background-color: #eef1f5;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+    .highlight {
+      background-color: #e0f2fe;
+      border-left: 4px solid #3b82f6;
+      padding: 1rem;
+      border-radius: 6px;
+    }
+    .feature {
+      margin-top: 0.5rem;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
 
+  <h1>⚖️ Legal Sentiment Analyzer</h1>
 
-<p align="center">
-  <a href="https://streamlit.io/">
-    <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-Live%20App-ff4b4b?logo=streamlit&logoColor=white&style=for-the-badge">
-  </a>
-  <a href="https://huggingface.co/google/flan-t5-base">
-    <img alt="Hugging Face Model" src="https://img.shields.io/badge/Made%20with-FLAN--T5-blue?logo=google&style=for-the-badge">
-  </a>
-  <a href="https://opensource.org/licenses/MIT">
-    <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge">
-  </a>
-</p>
+  <p>A Gemini-powered Streamlit app to analyze the <strong>sentiment of legal documents</strong>, generate <strong>AI-powered summaries</strong>, and export results in a clean PDF — all in a pastel-themed user-friendly UI.</p>
 
+  <h2>🚀 Live Demo</h2>
+  <p><a href="#">🔗 Try it here</a></p>
 
-An AI-powered tool that automates sentiment analysis on legal documents using large language models like FLAN-T5 or Mistral. Built with Streamlit for a smooth, interactive experience.
+  <h2>✨ Features</h2>
+  <ul>
+    <li class="feature">📄 Paste any legal document and analyze its <strong>sentiment</strong> (Positive, Neutral, Negative)</li>
+    <li class="feature">🧠 Get a <strong>concise AI summary</strong> powered by Gemini 1.5</li>
+    <li class="feature">📊 Visual sentiment scores via Hugging Face transformers</li>
+    <li class="feature">📥 Export everything into a beautiful <strong>PDF report</strong></li>
+    <li class="feature">🎨 Pastel modern UI with clean typography and soft styling</li>
+    <li class="feature">🔐 API key securely loaded via <code>.env</code> or <code>secrets.toml</code></li>
+  </ul>
 
-<b> Description</b>
+  <h2>🛠️ Tech Stack</h2>
+  <ul>
+    <li>Streamlit – UI framework</li>
+    <li>Gemini API – by Google Generative AI</li>
+    <li>Hugging Face Transformers – for sentiment analysis</li>
+    <li>fpdf – for PDF creation</li>
+    <li>python-dotenv – for securely loading API keys</li>
+    <li>torch – for model inference</li>
+  </ul>
 
-This project analyzes legal documents to determine sentiment—positive, negative, or neutral. It helps law firms or compliance teams quickly evaluate the tone and implication of large case summaries or client feedback.
+  <h2>📸 App Preview</h2>
+  <table>
+    <tr>
+      <td><strong>Input Document</strong></td>
+      <td><strong>Sentiment Result</strong></td>
+      <td><strong>Gemini Summary</strong></td>
+      <td><strong>PDF Export</strong></td>
+    </tr>
+    <tr>
+      <td><img src="screenshot/input.png" alt="Input Document"></td>
+      <td><img src="screenshot/sentiment.png" alt="Sentiment Result"></td>
+      <td><img src="screenshot/summary.png" alt="Gemini Summary"></td>
+      <td><img src="screenshot/pdf.png" alt="PDF Export"></td>
+    </tr>
+  </table>
 
- <b>🎯Features</b>
+  <h2>📂 How to Run Locally</h2>
+  <div class="highlight">
+    <pre><code>git clone https://github.com/yourusername/Legal-Sentiment-Analyzer.git
+cd Legal-Sentiment-Analyzer
+pip install -r requirements.txt</code></pre>
+  </div>
 
-⚖️ Clean and preprocess legal language
+  <p>Then, create a <code>.env</code> file in the root directory:</p>
+  <div class="highlight"><code>GEMINI_API_KEY=your-api-key-here</code></div>
 
-🤖 Analyze sentiment using FLAN-T5
+  <p>Or, for deployment with Streamlit Cloud, create:</p>
+  <div class="highlight"><code>.streamlit/secrets.toml</code></div>
+  <pre><code>[secrets]
+GEMINI_API_KEY = "your-api-key-here"</code></pre>
 
-🧼 Summarized and labeled output
+  <p>Now, run the app:</p>
+  <div class="highlight">
+    <pre><code>streamlit run new.py</code></pre>
+  </div>
 
-🌐 Streamlit-based web interface
+  <h2>🙌 Credits</h2>
+  <p>Made with ❤️ using Gemini, Hugging Face, and Streamlit.  
+  <br>Fork it, star it, or build your own custom analyzer!</p>
 
-📂 File upload support for .txt
+  <h2>🔐 Security Tip</h2>
+  <p>Ensure your <code>.env</code> is in <code>.gitignore</code> and is never committed to GitHub.</p>
 
-🧠 Hugging Face Transformers-based NLP
-
-🪄 Prompt-style zero-shot inference
-
-🚀 <b> Getting Started </b>
-
-1. Install Dependencies
-
-pip install -r requirements.txt
-
-2. Run the App
-
-streamlit run streamlit_app.py
-
- <b>🛠️ File Structure </b>
-
-GenAI/
-├── main.py               # CLI version
-├── preprocess.py         # Text cleaning
-├── analyze.py            # Model-based analysis
-├── streamlit_app.py      # Web UI with file upload
-├── legal_doc.txt         # Sample input file
-├── requirements.txt      # Dependencies
-└── README.md             # Project description
-
- <b>🤖 Models Used </b>
-
-google/flan-t5-base (via Hugging Face Transformers)
-
-Compatible with: Mistral, BERT, GPT-2 (if extended)
-
-🛠️ Tech Stack
-Streamlit – UI framework
-Gemini API – by Google Generative AI
-PyPDF2, python-docx – file handling
-
- <b>🌐 Use Cases </b>
-
-📑 Sentiment tagging of legal case summaries
-
-🧾 Reviewing client feedback
-
-⚖️ Pre-litigation document triage
-
-🕵️‍♀️ Legal research and compliance automation
-
- <b>🔐 Security and Ethics </b>
-
-This tool is designed for internal use and educational/demo purposes. Users are encouraged to anonymize legal documents and ensure data privacy when testing.
-
+</body>
+</html>
