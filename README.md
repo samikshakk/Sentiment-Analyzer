@@ -65,21 +65,7 @@
     <li>torch – for model inference</li>
   </ul>
 
-  <h2>📸 App Preview</h2>
-  <table>
-    <tr>
-      <td><strong>Input Document</strong></td>
-      <td><strong>Sentiment Result</strong></td>
-      <td><strong>Gemini Summary</strong></td>
-      <td><strong>PDF Export</strong></td>
-    </tr>
-    <tr>
-      <td><img src="screenshot/input.png" alt="Input Document"></td>
-      <td><img src="screenshot/sentiment.png" alt="Sentiment Result"></td>
-      <td><img src="screenshot/summary.png" alt="Gemini Summary"></td>
-      <td><img src="screenshot/pdf.png" alt="PDF Export"></td>
-    </tr>
-  </table>
+  
 
   <h2>📂 How to Run Locally</h2>
   <div class="highlight">
