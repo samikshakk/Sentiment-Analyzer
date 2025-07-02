@@ -63,17 +63,10 @@ google/flan-t5-base (via Hugging Face Transformers)
 
 Compatible with: Mistral, BERT, GPT-2 (if extended)
 
-📚 Tech Stack
-
-Python 3.9+
-
-Streamlit
-
-Hugging Face Transformers
-
-PyTorch
-
-Regex for cleaning text
+🛠️ Tech Stack
+Streamlit – UI framework
+Gemini API – by Google Generative AI
+PyPDF2, python-docx – file handling
 
  <b>🌐 Use Cases </b>
 
