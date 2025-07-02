@@ -35,7 +35,7 @@
 
   <h2>📂 How to Run Locally</h2>
   <div class="highlight">
-    <pre><code>git clone https://github.com/yourusername/Legal-Sentiment-Analyzer.git
+    <pre><code>git clone https://github.com/samikshakk/Sentiment-Analyzer.git
 cd Legal-Sentiment-Analyzer
 pip install -r requirements.txt</code></pre>
   </div>
