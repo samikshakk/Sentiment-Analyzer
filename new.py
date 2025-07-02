@@ -4,14 +4,14 @@ import torch
 from google.generativeai import configure, GenerativeModel
 from fpdf import FPDF
 import io
-import os
 from dotenv import load_dotenv
+import os
+from google.generativeai import configure
 
 load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
+configure(api_key=api_key)
 
-require('dotenv').config();
-const apiKey = process.env.GEMINI_API_KEY;
 
 # --- Custom CSS ---
 st.markdown("""
