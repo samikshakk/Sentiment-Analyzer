@@ -2,38 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f7fa;
-      color: #1a1a1a;
-      padding: 2rem;
-      line-height: 1.6;
-    }
-    h1 {
-      color: #3b82f6;
-    }
-    code, pre {
-      background-color: #eef1f5;
-      padding: 0.2rem 0.4rem;
-      border-radius: 4px;
-      font-family: Consolas, monospace;
-    }
-    .highlight {
-      background-color: #e0f2fe;
-      border-left: 4px solid #3b82f6;
-      padding: 1rem;
-      border-radius: 6px;
-    }
-    .feature {
-      margin-top: 0.5rem;
-    }
-    img {
-      max-width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    }
-  </style>
+  
 </head>
 <body>
 
@@ -41,8 +10,6 @@
 
   <p>A Gemini-powered Streamlit app to analyze the <strong>sentiment of legal documents</strong>, generate <strong>AI-powered summaries</strong>, and export results in a clean PDF — all in a pastel-themed user-friendly UI.</p>
 
-  <h2>🚀 Live Demo</h2>
-  <p><a href="#">🔗 Try it here</a></p>
 
   <h2>✨ Features</h2>
   <ul>
