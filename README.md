@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Legal Sentiment Analyzer</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
